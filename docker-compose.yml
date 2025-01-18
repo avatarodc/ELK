@@ -46,6 +46,8 @@ services:
       - "5601:5601"
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - XPACK_ENCRYPTED_SAVED_OBJECTS_ENCRYPTIONKEY= "n7tX9L1jWwHtqW+4HszzKfgpRqs9eIbTt+HFhzfvlI4="
+
     networks:
       - elk-network
     depends_on:
