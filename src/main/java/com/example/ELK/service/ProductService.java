@@ -30,7 +30,7 @@ public class ProductService {
      * @return Le produit correspondant
      * @throws RuntimeException si le produit n'est pas trouvé
      */
-    public Product getProduct(String id) {
+    public Product getProduct(Long id) {
         // Journalisation de la tentative de récupération
         log.info("Récupération du produit avec l'identifiant : {}", id);
         return productRepository.findById(id)
